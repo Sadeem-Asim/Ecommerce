@@ -1,0 +1,460 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* navigation bar style start */
+svg {
+  width: 7em;
+}
+View Compiled Resources #gui {
+  left: 0;
+  position: fixed;
+  top: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+header {
+  background-color: transparent;
+  position: relative;
+}
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding-top: 10px;
+}
+.nav-wrapper ul li {
+  display: inline-block;
+  padding: 0 8px;
+}
+.nav-wrapper ul li a {
+  font-size: 17px;
+  line-height: 22px;
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  cursor: pointer;
+  transition: 0.3s;
+  padding-bottom: 1px;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.nav-wrapper ul li a:hover {
+  border-bottom: 1px solid white;
+}
+.nav-wrapper .logo .image1 {
+  max-width: 100px;
+}
+
+body.scroll header.sticky {
+  transform: translateY(0);
+}
+.sticky {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(-200px);
+  transition: 0.6s;
+  -webkit-transition: 0.6s;
+  -moz-transition: 0.6s;
+  -ms-transition: 0.6s;
+  -o-transition: 0.6s;
+  z-index: 6;
+}
+/* parallax page starts here */
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+#scene .name {
+  font-size: 35px;
+  text-align: center;
+  width: 100%;
+  color: white;
+  text-transform: uppercase;
+}
+#scene .designation {
+  font-size: 35px;
+  text-align: center;
+  margin-top: 60px;
+  width: 100%;
+  text-transform: uppercase;
+  color: white;
+}
+#scene .btn-main {
+  text-align: center;
+  margin-top: 150px;
+  width: 100%;
+  color: white;
+}
+#scene {
+  margin-top: 100px;
+}
+.main_cover {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+    url(images/hero-bg.jpg);
+  height: 60vh;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.btn-portfolio,
+.btn-contact {
+  text-decoration: none;
+  color: white;
+  padding: 7px 15px;
+  border: 1px solid white;
+  background-color: transparent;
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+}
+.btn-portfolio {
+  margin-right: 30px;
+}
+.btn-contact {
+  margin-left: 30px;
+}
+.btn-portfolio:hover,
+.btn-contact:hover {
+  background-color: white;
+  color: black;
+  text-shadow: 1px 1px 1px grey;
+}
+/* masonry js css grid starts here */
+
+.subtitle {
+  position: relative;
+  font-size: 35px;
+  line-height: 40px;
+  color: black;
+  margin: 70px auto;
+  text-align: center;
+}
+.subtitle::after {
+  content: "";
+  display: block;
+  background-color: black;
+  height: 2px;
+  width: 100px;
+  margin: 30px auto 0 auto;
+}
+.masonry-grid {
+  position: relative;
+  z-index: 5;
+}
+.grid {
+  margin: 0 auto;
+}
+.grid-item {
+  width: 320px;
+  margin-bottom: 10px;
+}
+
+.tall-img {
+  height: 500px;
+}
+.gigante {
+  width: 400px;
+}
+/* beating heart section */
+.beating-heart {
+  background: linear-gradient(rgba(0, 0, 0, 0.603), rgba(0, 0, 0, 0.596)),
+    url(images/hero-bg.jpg) no-repeat right bottom / cover;
+  height: 100vh;
+  text-align: center;
+  color: white;
+  padding: 50px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.beating-heart h2 {
+  margin-bottom: 30px;
+  color: white;
+}
+.beating-heart h2.subtitle::after {
+  background: white;
+}
+.beating-heart p {
+  font-size: 20px;
+  color: white;
+}
+.beating-heart .heart {
+  position: relative;
+  width: 130px;
+  fill: red;
+  margin: 0 50px;
+  animation: pulse 1s infinite;
+  -webkit-animation: pulse 1s infinite;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  15% {
+    transform: scale(1.25);
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+    -o-transform: scale(1.25);
+  }
+  25% {
+    transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    -o-transform: scale(1.15);
+  }
+  35% {
+    transform: scale(1.25);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.beating-heart span {
+  font-size: 55px;
+}
+
+.beating-heart .heart1 {
+  padding-top: 40px;
+}
+
+/* slick slider css */
+
+.slick-slider h2 {
+  margin-bottom: 0;
+}
+.slider {
+  padding: 20px;
+  margin: 20px auto;
+  text-align: center;
+  color: white;
+}
+.slide {
+  max-height: 300px;
+  padding: 15px;
+}
+.slick-prev,
+.slick-next {
+  background-color: black;
+  height: 40px;
+  width: 40px;
+  z-index: 1;
+}
+.slick-prev {
+  left: 0;
+}
+.slick-next {
+  right: 0;
+}
+.slick-prev:hover,
+.slick-next:hover {
+  background-color: black;
+}
+
+footer {
+  height: 150px;
+  position: relative;
+  background-color: black;
+  z-index: -2;
+  text-align: center;
+  color: white;
+}
+
+footer h1 {
+  position: fixed;
+  font-size: 15px;
+  line-height: 20px;
+  bottom: 50px;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 1;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  -webkit-transform: translate(-50%);
+  -moz-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  -o-transform: translate(-50%);
+}
+
+/* responsive design start*/
+
+@media only screen and (max-width: 450px) {
+  #scene .name,
+  #scene .designation {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  #scene {
+    margin-top: 50px;
+  }
+  .btn-portfolio,
+  .btn-contact {
+    font-size: 10px;
+    line-height: 15px;
+  }
+  #scene .btn-main {
+    margin-top: 110px;
+    display: block;
+  }
+  .nav-wrapper .menu {
+    max-width: 200px;
+  }
+  .nav-wrapper .menu::after {
+    left: 50px;
+  }
+  .nav-wrapper .menu::before {
+    left: 4px;
+  }
+  h2.subtitle {
+    font-size: 25px;
+    line-height: 30px;
+    margin: 30px 0;
+  }
+  .grid-item {
+    width: initial !important;
+  }
+  .tall-img {
+    height: initial;
+  }
+  .beating-heart {
+    height: initial;
+  }
+
+  .beating-heart p {
+    font-size: 10px;
+    line-height: 15px;
+  }
+  footer h1 {
+    font-size: 10px;
+    line-height: 15px;
+    bottom: 65px;
+  }
+  footer {
+    height: 100px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .beating-heart span {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .beating-heart .heart {
+    max-width: 70px;
+  }
+  .beating-heart p {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .menu-trigger {
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    background: url(images/hamburger-icon.svg) no-repeat center / cover;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+  .main-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.637);
+    display: none;
+    transition: 0.4s;
+  }
+  .main-overlay::after {
+    content: "";
+    background: url(images/close-icon.svg) no-repeat center / cover;
+    height: 30px;
+    width: 32px;
+    position: absolute;
+    top: 16px;
+    right: 30px;
+    display: block;
+    z-index: 20;
+    cursor: pointer;
+  }
+  .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    max-width: 300px;
+    background-color: black;
+    z-index: 30;
+    transform: translate3d(-100%, 0, 0);
+    transition: 0.3s;
+  }
+  .menu::before {
+    content: " Made By sadeem asim ";
+    display: block;
+    position: absolute;
+    left: 56px;
+    color: red;
+    bottom: 45px;
+  }
+  .menu::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background: url(images/white-logo.png) no-repeat center / cover;
+    height: 32px;
+    width: 81px;
+    left: 101px;
+    bottom: 99px;
+  }
+
+  header .menu li {
+    margin-top: 20px;
+    margin-left: 5px;
+    padding: 0;
+    padding-bottom: 10px;
+    display: block;
+  }
+  header.sticky {
+    display: none;
+  }
+  header .menu li a {
+    font-size: 18px;
+    list-style: none;
+    line-height: 23px;
+  }
+  header .menu li a:hover {
+    border-bottom: transparent;
+  }
+  .menu-active {
+    transform: translate3d(0, 0, 0);
+  }
+  .trigger-off {
+    display: none;
+  }
+  .overlay-active {
+    display: block;
+  }
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="slick.css" />
+    <link rel="stylesheet" href="slick-theme.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="main.css" />
+    <title>project-6</title>
+  </head>
+  <body>
+    <section class="main_cover" id="menu">
+      <header>
+        <div class="main-overlay"></div>
+
+        <div class="container">
+          <nav class="nav-wrapper">
+            <div class="logo">
+              <img class="image1" src="images/white-logo.png" alt="#" />
+            </div>
+            <div class="menu">
+              <ul>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#work">My Work</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#slider">Slider</a></li>
+                <li><a href="#footer">Footer</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+
+        <div class="menu-trigger"></div>
+      </header>
+
+      <div class="container wrapper">
+        <ul
+          id="scene"
+          data-invert-x="false"
+          data-invert-y="false"
+          data-scalar-x="7"
+          data-scalar-y="7"
+          data-friction-x="0.1"
+          data-friction-y="0.1"
+          data-origin-x="0.5"
+          data-origin-y="0.5"
+        >
+          <li class="layer name" data-depth="0.90">Your name here</li>
+          <li class="layer designation" data-depth="0.50">
+            your designation here
+          </li>
+          <li class="layer btn-main" data-depth="0.30">
+            <a href="#" class="btn-portfolio">View Portfolio</a>
+            <a href="#" class="btn-contact">Contact Me</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="masonry-grid" id="work">
+      <h2 class="subtitle">My Photography Tutorial</h2>
+      <div class="grid">
+        <div class="grid-item">
+          <img src="images/one.jpg" alt="#" />
+        </div>
+        <div class="grid-item"><img src="images/two.jpg" alt="#" /></div>
+
+        <div class="grid-item"><img src="images/four.jpg" alt="#" /></div>
+
+        <div class="grid-item"><img src="images/six.jpg" alt="#" /></div>
+        <div class="grid-item"><img src="images/three.jpg" alt="#" /></div>
+        <div class="grid-item"><img src="images/seven.jpg" alt="#" /></div>
+        <div class="grid-item"><img src="images/eight.jpg" alt="#" /></div>
+      </div>
+    </section>
+    <section class="beating-heart" id="about">
+      <div class="container">
+        <div class="wrapper">
+          <h2 class="subtitle">About Me</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequatur, doloribus magni, iusto vel reiciendis delectus beatae
+            itaque repellendus quas eligendi ipsam temporibus, molestiae libero.
+            Non deserunt aut rerum est optio! Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Consequatur, doloribus magni, iusto
+            vel reiciendis delectus beatae itaque repellendus quas eligendi
+            ipsam temporibus, molestiae libero. Non deserunt aut rerum est
+            optio!
+          </p>
+
+          <div class="heart1">
+            <span>I</span>
+            <svg class="heart" viewBox="0 0 32 29.6">
+              <path
+                d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+          	c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"
+              />
+            </svg>
+            <span>PHOTOGRAPHY</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slick-slider" id="slider">
+      <h2 class="subtitle">Slider Showcase</h2>
+      <div class="slider">
+        <div class="slide">
+          <img src="images/eight.jpg" class="img-responsive" />
+        </div>
+        <div class="slide">
+          <img src="images/nine.jpg" class="img-responsive" />
+        </div>
+        <div class="slide">
+          <img src="images/eleven.jpg" class="img-responsive" />
+        </div>
+
+        <div class="slide">
+          <img src="images/six.jpg" class="img-responsive" />
+        </div>
+      </div>
+    </section>
+
+    <footer class="paralax-footer" id="footer">
+      <h1>Hi , this is parallax footer , you like me.</h1>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="../node_modules/animejs/lib/anime.min.js"></script>
+
+    <script src="parallax.min.js"></script>
+    <script src="masonry.js"></script>
+    <script src="slick.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
